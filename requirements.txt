@@ -1,0 +1,7 @@
+argparse
+os
+re
+numpy
+yaml
+openai
+pdfminer.six==20201018
