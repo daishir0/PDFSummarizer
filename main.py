@@ -68,7 +68,7 @@ def process_pdf(file_path, total_files, current_idx):
         while attempt < 3:  # 最大3回までリトライ
             try:
                 response = client.chat.completions.create(
-                    model="gpt-3.5-turbo",
+                    model="gpt-3.5-turbo-1106",
                     messages=[
                         {"role": "system", "content": "あなたは、プロの論文研究者で熟練した査読者です。あなたは、前後に問い合わせした内容を考慮して思慮深い回答をします。"},
                         {"role": "user", "content": create_prompt(text_chunk, len(splited_clean_text))}
