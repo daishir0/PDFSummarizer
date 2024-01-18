@@ -1,7 +1,5 @@
 argparse
-os
-re
 numpy
-yaml
+pyyaml
 openai
 pdfminer.six==20201018
